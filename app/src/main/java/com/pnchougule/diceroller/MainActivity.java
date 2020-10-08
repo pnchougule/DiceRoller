@@ -20,18 +20,18 @@ public class MainActivity extends AppCompatActivity {
 
         dice=findViewById(R.id.imgVw_dice);
         random = new Random();
-//
-//        dice.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                roll();
-//            }
-//        });
+
+        dice.setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View v) {
+             roll();
+         }
+        });
 
 
     }
 
-    public void roll(View view)
+    public void roll()
     {
 
         int num = random.nextInt(6)+1; // store number
